@@ -1,0 +1,258 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+nav img {
+  height: 100px;
+}
+ul {
+  list-style-type: square;
+}
+header {
+  background: url("../img/const2.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+#text-typed {
+  font-size: 1.5em;
+}
+.sombra {
+  box-shadow: 3px 3px 15px;
+}
+.dashed {
+  padding: 10px;
+  border-bottom: 2px dashed rgb(216, 198, 198);
+}
+.curva {
+  border-radius: 10px;
+}
+.card-body a {
+  color: #130569;
+  text-decoration: none;
+}
+.card-body a:hover {
+  color: #daa520;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #daa520;
+}
+.text-gold {
+  color: #daa520;
+}
+nav {
+  transition: background-color 1s ease;
+}
+.navbar img {
+  height: 35px;
+}
+#bread {
+  top: 30%;
+}
+ol a:hover {
+  color: #daa520;
+}
+a {
+  text-decoration: none;
+  color: #130569;
+}
+
+footer a {
+  color: grey;
+}
+
+input,
+label,
+textarea {
+  margin: 3px;
+}
+form .btn {
+  margin: 10px 15px;
+}
+
+#img {
+  display: block;
+}
+
+/* Sejam Bem vindos */
+.colorido {
+  font-size: 25px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fim de Sejam bem vindos */
+
+/* Toggle button - BLOG */
+.toggle-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: grey;
+  padding: 5px;
+  transition: all 300ms ease-in-out;
+}
+.inner-cicle {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.toggle-btn.active {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #0accee;
+  padding: 5px;
+  transition: all 300ms ease-in-out;
+}
+.toggle-btn.active .inner-cicle {
+  margin-left: 40px;
+  transition: all 300ms ease-in-out;
+}
+
+/* END Toggle button - BLOG */
+
+/* LOGO */
+
+.navbar-brand img {
+  height: 50px;
+  width: 142px;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    height: 40px;
+    width: auto;
+  }
+}
+
+/* FIM LOGO */
+
+/* SKILL PAGE */
+
+.skill-badge {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+/* CERTIFICADOS PAGE */
+
+.cert-badge {
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* Timeline */
+
+.timeline li {
+  list-style: inside;
+}
+
+.dir {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 1.25em;
+  color: #daa520;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  background-color: #130569;
+  width: 40px;
+  height: 40px;
+  padding-top: 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #130569;
+}
+
+.esq {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 1.25em;
+  color: #daa520;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  background-color: #130569;
+  width: 40px;
+  height: 40px;
+  padding-top: 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #130569;
+}
+
+.borda-top {
+  border-top: 3px solid #130569;
+}
+.borda-start {
+  border-left: 3px solid #130569;
+}
+.borda-end {
+  border-right: 3px solid #130569;
+}
+.borda-bottom {
+  border-bottom: 3px solid #130569;
+}
+
+#navspy a {
+  color: #130569;
+  text-decoration: none;
+}
+#navspy a:hover {
+  color: #daa520;
+}

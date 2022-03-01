@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- CSS style -->
+
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <link
+      rel="shortcut icon"
+      href="../img/Logo-Gustavinho2.png"
+      type="image/x-icon"
+    />
+    <title>BLOG</title>
+    <style>
+      header {
+        background: url("../img/const2.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 50vh;
+      }
+
+      .sticky-top {
+        top: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-blue bg-blue bg-transparent p-4"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ps-5" href="../index.html">
+            <img src="../img/Logo-Gustavinho2.png" alt="GSilva"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">CONTATO</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav d-none d-md-flex">
+            <li class="nav-item ps-4">
+              <a class="nav-link text-light" href="https://github.com/GuuhBoss"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href=""
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://www.instagram.com/guuhsiilvaaaaa/"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://www.linkedin.com/in/gustavosjob/"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="position-absolute start-50 translate-middle" id="bread">
+        <a class="navbar-brand" href="">
+          <img
+            style="height: 75px"
+            src="../img/Logo-Gustavinho2.png"
+            alt="GSilva"
+        /></a>
+        <div
+          style="
+            --bs-breadcrumb-divider: url(
+              &#34;data:image/svg + xml,
+              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;
+            );
+          "
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artigo</li>
+          </ol>
+        </div>
+      </div>
+    </header>
+    <section class="mt-5 me-3">
+      <div class="d-flex flex-row-reverse">
+        <div class="col-2">
+          <nav
+            id="navspy"
+            class="navbar navbar-light bg-light flex-column align-items-stretch p-3 sticky-top curva"
+          >
+            <a class="navbar-brand text-center disabled" href="#">Conteúdo</a>
+            <hr />
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#titulo">Piscina Oceânica</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#introducao">Introdução</a>
+              </nav>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#relatorio">Relatório</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col offset-2">
+          <section
+            class="container"
+            data-bs-spy="scroll"
+            data-bs-target="#navspy"
+            data-bs-offset="0"
+          >
+            <div class="row text-center">
+              <h2 class="text-black" id="titulo">
+                GABINETE ARMAZÉM DE PEQUENAS ENCOMENDAS
+              </h2>
+            </div>
+
+            <div>
+              <h4 class="text-center mt-3" id="relatorio">Relatório</h4>
+
+              <p>
+                Eng. Francisco ligou-me a dizer que iria fazer um gabinete no
+                local do Armazém de pequenas encomendas. Fomos no local para
+                tirar a ideia de como ia ser e como ia ficar e suas medidas.
+              </p>
+
+              <p>
+                Tiramos as medidas de outro gabinete e vamos fazer um do mesmo
+                tipo ou muito parecido para manter a estética.
+              </p>
+
+              <p>
+                Ele pediu-me para fazer em 1h30 min. Eu achei um pouco
+                complicado fazer em 1h30 min, visto que ele me pediu com os
+                cortes, fachada, com um boneco lá de amostra, cadeiras, mesa,
+                computadores, porta, janelas e etc.
+              </p>
+
+              <p>Contudo não reclamei e disse que iria me esforçar.</p>
+
+              <p>
+                Como estava a desenvolver/ a aprender Revit decidi fazer em 3D,
+                mesmo com muito pouco conhecimento de Revit, comecei 2-3 dias
+                antes desse dia.
+              </p>
+
+              <p>
+                Porém sabia que isso iria me facilitar muito visto que o Revit
+                depois de fazer o 3D iria logo dar as fachadas e com um simples
+                comando poderia dar-me qualquer corte que necessitasse.
+              </p>
+
+              <p>
+                Após 2h horas conclui o que me fora exigido. Aprendi rapidamente
+                como incluir os objetos BIM e rapidamente consegui finalizar.
+                Extrai para o Autocad e entreguei o trabalho para a pessoa
+                devida como pedido.
+              </p>
+
+              <div class="d-flex justify-content-around row align-items-center">
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture1.png"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 1 - Gabinete Armazém em 3D</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Após alguns dias começaram a trabalhar na construção do gabinete
+                estrutura metálica e alvenaria de bloco de cimento e metálica
+                com betão e gesso acartonado.
+              </p>
+
+              <div class="d-flex justify-content-around row align-items-center">
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture2.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 2 - Estrutura metálica do gabinete</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture3.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 3 - Alvenaria de bloco de cimento</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around row align-items-center">
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture4.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 4 - Alvenaria de bloco por dentro</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture5.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 5 - Alvenaria metálica</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Introduziram-se as instalações elétricas, lâmpadas,
+                ar-condicionado, água potável para beberem e higienização para
+                as mãos finalmente estava pronto ser utilizado.
+              </p>
+
+              <div class="d-flex justify-content-around row align-items-center">
+                <div class="col text-center">
+                  <img
+                    src="./img/GabineteArm/Picture6.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 6 - Gabinete concluído</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light mt-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <h2 class="footer-logo text-black">Social Media</h2>
+          <p class="mx-auto mt-4 fw-bolder">Encontre-me nas Redes Sociais!</p>
+          <ul class="list-unstuled mt-4 social-icon">
+            <li class="list-inline-item me-1">
+              <a
+                href="https://github.com/GuuhBoss"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://web.facebook.com/gustavinho.silva.10"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://www.instagram.com/guuhsiilvaaaaa/"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://www.linkedin.com/in/gustavosjob/"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <!-- <li class="list-inline-item me-1"><a href="https://wa.me/351937115131?text=Olá! Sou Gustavo Silva, prazer!" class="btn btn-outline-primary rounded-circle"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="text-center bg-blue text-gold pb-4">
+        <p class="pt-3 mb-2">&copy; 2021 Gustavo Silva</p>
+        <a href="">Legal Disclaimer</a>
+      </div>
+    </footer>
+  </body>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function scroll() {
+      console.log(window.scrollY);
+      if (window.scrollY > 25 && window.scrollY < 400) {
+        const nav = document.querySelector("nav");
+        nav.className =
+          "navbar navbar-expand-md navbar-blue bg-blue bg-opacity-75 p-4 shadow";
+      } else {
+        const nav = document.querySelector("nav");
+        nav.className =
+          "navbar navbar-expand-md navbar-blue bg-blue bg-transparent p-4";
+      }
+    }
+  </script>
+</html>

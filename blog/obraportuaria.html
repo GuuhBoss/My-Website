@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- CSS style -->
+
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <link
+      rel="shortcut icon"
+      href="../img/Logo-Gustavinho2.png"
+      type="image/x-icon"
+    />
+    <title>BLOG</title>
+    <style>
+      header {
+        background: url("../img/const2.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 50vh;
+      }
+
+      .sticky-top {
+        top: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-blue bg-blue bg-transparent p-4"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ps-5" href="../index.html">
+            <img src="../img/Logo-Gustavinho2.png" alt="GSilva"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">CONTATO</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav d-none d-md-flex">
+            <li class="nav-item ps-4">
+              <a class="nav-link text-light" href="https://github.com/GuuhBoss"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href=""
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://www.instagram.com/guuhsiilvaaaaa/"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="https://www.linkedin.com/in/gustavosjob/"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="position-absolute start-50 translate-middle" id="bread">
+        <a class="navbar-brand" href="">
+          <img
+            style="height: 75px"
+            src="../img/Logo-Gustavinho2.png"
+            alt="GSilva"
+        /></a>
+        <div
+          style="
+            --bs-breadcrumb-divider: url(
+              &#34;data:image/svg + xml,
+              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='currentColor'/%3E%3C/svg%3E&#34;
+            );
+          "
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artigo</li>
+          </ol>
+        </div>
+      </div>
+    </header>
+    <section class="mt-5 me-3">
+      <div class="d-flex flex-row-reverse">
+        <div class="col-2">
+          <nav
+            id="navspy"
+            class="navbar navbar-light bg-light flex-column align-items-stretch p-3 sticky-top curva"
+          >
+            <a class="navbar-brand text-center disabled" href="#">Conteúdo</a>
+            <hr />
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#titulo">Obra de 4 edificios</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#introducao">Introdução</a>
+              </nav>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#relatorio">Relatório</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col offset-2">
+          <section
+            class="container"
+            data-bs-spy="scroll"
+            data-bs-target="#navspy"
+            data-bs-offset="0"
+          >
+            <div class="row text-center">
+              <h2 class="text-black" id="titulo">
+                Obra de 4 edificios da Enapor
+              </h2>
+            </div>
+            <div>
+              <h4 class="text-center mt-3" id="introducao">Introdução</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                exercitationem unde doloribus iusto quisquam. Adipisci harum
+                eaque molestiae officia temporibus totam quam consequuntur at
+                reiciendis ipsum? Veritatis quas, ex vitae exercitationem
+                consequuntur pariatur magnam, sapiente quam inventore eum,
+                provident earum? Rerum ea est maiores saepe! Vero eius commodi,
+                optio ullam error temporibus eveniet accusantium provident
+                suscipit quas nisi earum exercitationem perspiciatis cupiditate
+                officiis possimus omnis nostrum modi deleniti, fugiat ea,
+                voluptatum nulla delectus quasi? Eius placeat odio, rerum,
+                voluptas assumenda repellat nam blanditiis expedita accusamus
+                laboriosam illo similique ullam provident odit vel aspernatur
+                repudiandae! Maxime dignissimos repellat corporis itaque ipsum
+                fugiat. Sed necessitatibus voluptatibus, inventore facere
+                repellendus voluptatem laboriosam. Tempora aliquam a modi
+                dolorum quis rem eligendi alias, omnis, atque ratione enim
+                provident. Vero asperiores cumque dolorum molestias tempore
+                inventore sunt sit! Ipsa, eligendi atque! Tenetur, molestiae
+                fuga earum non nesciunt dicta doloremque, ipsum exercitationem
+                magni, itaque sed cupiditate laboriosam neque architecto.
+                Doloribus, sint dolorem veniam similique ipsum dignissimos
+                blanditiis exercitationem beatae. Placeat voluptatem, labore
+                impedit nam doloribus cumque atque maxime debitis quibusdam
+                minus sit obcaecati mollitia, a explicabo magni tempora
+                aspernatur quam rerum alias nostrum culpa illum voluptas
+                exercitationem. Cum praesentium qui voluptate ad possimus
+                explicabo corporis delectus saepe.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-center mt-3" id="relatorio">Relatório</h4>
+              <p>
+                O Eng.º Francisco levou-me até uma obra da Enapor, onde havia
+                dito estar atrasada.
+              </p>
+              <p>
+                Ao chegar achei interessante, por ser uma estrutura mista, e
+                nunca ter calculado uma.
+              </p>
+              <p>
+                Conheci Fiscal Armindo que é responsável pela fiscalização da
+                obra, é de uma empresa contratada pela Enapor para tal.
+              </p>
+              <p>
+                Perguntei ao Fiscal Armindo se poderia obter o planeamento da
+                obra para poder acompanhar o que foi planeado e entender também
+                um pouco mais sobre a obra, logo recebi o planeamento.
+              </p>
+              <p>
+                Foi me dito que a obra está divida em 4 edifícios, bloco 1,
+                bloco 2, bloco 3 e bloco 4, porém até então só fizeram os
+                pilares e sapatas do bloco 2, e a meio da escavação da sapata do
+                bloco 3, já têm a cofragem e a armação pronta no bloco 2.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture1.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 1 - Cofragem e Armadura Laje Maciça
+                        Vigada</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Sina, a empresa empreiteira aparentemente contratou MATEC para
+                fazer a parte metálica da estrutura. E estão fazendo um suporte
+                para colocar os pilares metálicos em cima. Nunca tinha visto e
+                achei bem interessante.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture2.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 2 – Chumbadores (apoio de conexão pilar de betão
+                        e metálico</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Conversei com os armadores que pelo que dizem estão preparando a
+                armação da escada e da sapata, avaliei o diâmetro do aço que
+                estavam a utilizar e era correspondente ao projeto de estrutura.
+                Ao colocarem a armação na sapata estava tudo corretamente, porém
+                ao colocarem a armadura da escada, vi que estava algo estranho,
+                por outro lado o projeto estava um pouco confuso, mas com a
+                ajuda do fiscal chegamos na conclusão de que eles colocaram a
+                armação da escada errada. Para ajudar-lhes no entendimento do
+                projeto, fiz um desenho mais fácil de se compreender. E assim
+                foi, eles corrigiram e ficou de acordo com o projeto.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture3.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 3 – Cofragem e Armação das escadas</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Pedi para que me fosse dado o projeto desta obra, falei com o
+                responsável que tinha os projetos, Carlos, e ele me enviou o
+                projeto. Até então como não me deram um computador disponível e
+                nem me disponibilizaram a internet da Enapor por causa da
+                “rede”, disponibilizei o meu computador pessoal e meus dados
+                moveis, para poder baixar.
+              </p>
+              <p>
+                Durante a obra, eu reparei que eles tinham documentos que eu não
+                tinha, e dei conta que não tinha o projeto estrutural do bloco 2
+                e bloco 3.
+              </p>
+              <p>
+                Pedi ao fiscal Armindo para que me enviasse o planeamento da
+                obra dos restantes blocos, e foi me dito que não tinham visto
+                que a obra foi alterada no bloco 1 e 4.
+              </p>
+              <p>
+                Pedi para o Carlos que me enviasse o bloco 2 e bloco 3, e ele
+                pensava que me tinha enviado, mas como tinham refeito o bloco 1
+                e 4 o projetista quando enviou os documentos, apenas enviou o
+                bloco 1 e 4, por essa razão só tinha os projetos do 1 e 4
+                atualizados, e então ele enviou-me o projeto dos blocos 2 e 3.
+              </p>
+              <p>
+                Aprendi com os trabalhadores, enquanto estavam a trabalhar,
+                porque vi eles a cortarem o aço em algumas zonas, e eu perguntei
+                o porque, foi me dito que estavam a instalar os tubos
+                “negativos”, para passar os canos de água na laje.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture4.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 4 – Corte das armaduras</strong></p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture5.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 5 – As Caixas Negativas</strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Segunda-feira, 26/04, pude presenciar a betonagem da laje e das
+                escadas, onde apareceram muito mais gente, foi me dito que
+                contrataram uma mini-empresa para fazer essa parte, empresa
+                Culai. Trabalharam de forma um pouco agressiva, estragando um
+                pouco do trabalho que foi feito com a armação, os tubos
+                negativos, e desviando os chumbadores.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture6.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 6 – Passagem dos carrinhos de cimento</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture7.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 7 – Betão antes de vibrado</strong></p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture8.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 8 – Betão após vibração</strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture9.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 9 – Chumbadores após betonagem</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture108.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 10 – Laje Bloco 2 Piso 1</strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture10.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 11 – Betonagem das escadas 1</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture11.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 12 – Betonagem das escadas 2</strong></p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture12.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p><strong>Figura 13 – Moldes de betão 15 x 15</strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                O Eng.º Francisco convidou-me para ir numa reunião da MOP (Mão
+                de obra portuária).
+              </p>
+              <p>
+                Fiquei muito feliz por ter participado, nunca tinha participado
+                numa e pude ver como que são as reuniões entre o dono da obra,
+                empreiteiros e fiscais, onde relem o que foi dito na reunião
+                anterior e acompanham a construção da obra, de forma que todos
+                cheguem em um entendimento do que se está a ocorrer e os
+                problemas da obra.
+              </p>
+              <p>
+                Fui também numa reunião da Enapor após a reunião da MOP, na qual
+                pude ouvir as decisões que Enapor estava disposta a fazer em
+                questão à MOP, pelo que me parece o empreiteiro estava com
+                dificuldades financeiras de ter os materiais em obra, para poder
+                continuar a construção, logo chegaram numa conclusão de
+                possivelmente dar um adiantamento, e que iriam avaliar melhor
+                essa decisão.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture13.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 14 – Reunião MOP</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Um novo engenheiro chegou na obra da MOP, para poder ficar de
+                plantão na obra, visto que o encarregado anterior tinha várias
+                obras para controlar, e não conseguia dar conta desta obra. E
+                como é uma obra relativamente grande é fundamental para que a
+                obra aconteça numa velocidade boa.
+              </p>
+              <p>
+                Conheci o novo engenheiro, Eng.º Amílcar, que pelo que disseram
+                é um engenheiro experiente na área.
+              </p>
+              <p>
+                No primeiro dia do Eng.º Amílcar, fiquei a conversar com ele
+                sobre a obra, e o projeto em si. Ele indicou-me coisas que são
+                importantes de observar no projeto, que por acaso não tinha
+                observado, isto é, recomendações que é dada pelo projetista.
+                Falei pra ele também sobre a minha preocupação do projeto não
+                aparecer o tipo de exposição ambiental no projeto em si, e
+                apenas no livro de encargos.
+                <strong
+                  >Cheguei a conclusão também que o projeto não respeita o
+                  recobrimento mínimo nos pilares e nas lajes para uma classe de
+                  betão S4 (tempo útil de projeto 50 anos).</strong
+                >
+              </p>
+              <p>
+                A obra, aparentemente, com a chegada do engenheiro Amílcar
+                começou a andar mais rápida.
+              </p>
+              <p>
+                Vejo, a importância do engenheiro civil na obra, visto que a
+                obra na grande maioria de as vezes ficar parada é devido os
+                operadores não saberem o que fazer, ou como fazer. E
+                necessitarem um esclarecimento de um engenheiro. E com o
+                engenheiro sempre presente em obra, facilmente e mais
+                rapidamente os operadores ficam com as dúvidas esclarecidas e
+                retomam o procedimento dos seus trabalhos.
+              </p>
+              <p>
+                Então engenheiro Amílcar, logo de seguida pediu aos pedreiros
+                para cofrarem os pilares do piso 2 o mais rápido possível para
+                poderem betonar e também começarem já a cofrar a laje do bloco
+                1.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture14.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 15 – Cofragem dos Pilares Bloco 2 Piso 1</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture15.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 16 – Vibrador da Betonagem</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture16.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 17 – Betonagem dos Pilares do bloco 2, Piso 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture17.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 16 – Cofragem e Armação Laje 1 Bloco
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Após betonarem foi pedido que começarem a cofragem da laje do
+                piso 2. Passado poucos dias já tinham cofrado e betonado os
+                pilares. Enquanto isso, existe uma empresa terciaria que
+                chumbava os apoios dos pilares metálicos, de uma empresa chamada
+                Matec.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture18.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 17 – Betonagem dos Pilares do bloco 2, Piso 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Enquanto isso, existe uma empresa terciaria que chumbava os
+                apoios dos pilares metálicos, de uma empresa chamada Matec.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture19.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 18 – Pilares metálicos </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture20.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 19 – Chumbadores com o pilar metálico
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Cofragem do piso 1 do bloco 1 ficou pronto e começou-se a
+                betonagem no dia 07/05/2021.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture21.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 20 – Betonagem da Laje do Bloco 1 Piso 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture22.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 21 – Bitola para garantir a espessura da laje
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture23.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 22 – Betonagem concluída Bloco 1 Piso 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                No próximo dia depois da betonagem, considerei a betonagem do
+                piso 1 do bloco 1 muito mal feita, devido que ficaram vários
+                furos que inclusive dava pra ver a armadura da laje numa delas.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture24.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 23 – Erros da laje devida a má betonagem
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                No qual chamei a atenção do fiscal e do engenheiro Amílcar, que
+                depois resolveram colocando um pouco de betão para tampar o
+                furo. Lembrei também o engenheiro amical de não se esquecer de
+                hidratar a laje do bloco 1.
+              </p>
+
+              <p>
+                Começaram a compactar o solo das sapatas do bloco 3, e então a
+                colocação das gaiolas com um plástico por baixo, para a terra
+                não corroer o betão.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture26.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 24 – Compactador </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture27.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 25 – Compatação do terreno </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture25.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 26 – Hidratação do betão </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                O engenheiro Amílcar, como um bom profissional, conseguiu
+                encontrar uma incongruência do projeto, onde apercebeu-se que a
+                largura do bloco 3 no projeto era maior que a viga metálica que
+                iria ser posta naquele lugar o que dava uma diferença de 13
+                centímetros. Por causa da precisão que as vigas metálicas
+                precisam de ter, foi necessário mover todas as sapatas literais
+                de fora para dentro mais 13 centímetros, o que fez a obra
+                atrasar um pouco mais que deveria.
+              </p>
+              <p>
+                Por causa da precisão que as vigas metálicas precisam de ter,
+                foi necessário mover todas as sapatas literais de fora para
+                dentro mais 13 centímetros, o que fez a obra atrasar um pouco
+                mais que deveria.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture28.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 27 – Reajuste das gaiolas e vigas de fundação
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Passado poucos dias, a cofragem da laje 2 do bloco 2 estava
+                pronta e os apoios dos pilares metálicos também, com tudo pronto
+                para betonar as fundações e a laje do piso 2, era o dia para
+                betonar a laje. O início foi um pouco demorado, com o café da
+                manhã, o que atrasou a obra e os trabalhadores ficaram um pouco
+                mais do que o horário de trabalho habitual.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture29.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 28 – Cofragem Laje 2 Bloco 2 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture30.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 29 – Betonagem Laje 2 Bloco 2 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture31.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 30 – Betonagem Sapatas </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Com a betonagem das fundações do Bloco 3, da laje do piso 2,
+                Matec que é responsável pela parte metálica da estrutura,
+                começou a colocar os pilares metálicos no piso 1 do bloco 2.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture32.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 31 – Moldes de betonagem </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture33.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 32 – Sapata após betonagem </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture34.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 33 – Sapata após Betonagem 2 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture35.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 34 – Colocação das asnas Piso 2 Bloco 2
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                E os trabalhadores começaram a levantar a alvenaria de pedra do
+                bloco 1 do piso 1.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture36.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 35 – Levantamento Parede de Pedra, Bloco 1 Piso
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Quando finalmente os pilares e as asnas metálicas já estavam
+                prontos no bloco 2 do piso 2, chamaram uma nova equipa de
+                pedreiros para começar a alvenaria de bloco.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture37.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 36 – Levantamento parede de bloco, Bloco 2 Piso
+                        1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Como já era previsto passaram-se 3 semanas para conseguirem
+                terminar a alvenaria de pedra.. E com a alvenaria de pedra
+                pronto começou-se a cofrar o lintel de cimento que ficará na
+                alvenaria de pedra. Outro ponto que gostaria de referir, é que o
+                lintel, do bloco 1 do piso 1 atrasou-se bastante por falta de
+                aço na obra.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture38.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 37 – Cofragem e armadura do lintel
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture39.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 38 – Betonagem do lintel </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Quando os trabalhadores da alvenaria de blocos terminaram,
+                começaram a fazer a alvenaria de blocos do piso 0 e também as
+                paredes interiores. Uma parede interior ficou muito mal feita, e
+                foi pedido para que fosse refeita.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture40.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 39 – Construção paredes interiores
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Quando as paredes interiores e a alvenaria do piso 0 ficaram
+                prontos, começaram a abrir os roços para a passagem dos cabos de
+                eletricidade embutidos, e começaram a chapiscar nas partes lisas
+                das paredes, como os pilares e vigas, para que assim no próximo
+                dia pudessem começar a rebocar a parede.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture41.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 40 – Roço para interruptor </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture42.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 41 – Roço para tomada </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture43.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 42 – Cabo de eletricidade </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture44.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 43 – Rebarbadora com disco de diamante
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture45.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 44 – Trabalhador a abrir o roço </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Enquanto tudo isso estava acontecendo, um outro grande problema
+                que tiveram foi com o bloco 3, mais uma vez, onde que no projeto
+                tinha uma fachada muito bonita feita de alvenaria de bloco até a
+                altura da asna. Porém como é uma estrutura metálica, não haveria
+                possibilidade de fazer amarração da alvenaria de bloco na parte
+                de baixo da viga metálica com a alvenaria de bloco com a parte
+                de cima da viga metálica para chegar até a altura da asna. Logo
+                tentaram entrar em contato com o projetista para tentar explicar
+                a situação para saber se era possível de alterar o projeto, e
+                qual a melhor maneira, contudo o projetista não soube lidar com
+                a situação, visto que ele está distante do projeto e não
+                compreendeu o que foi explicado.
+              </p>
+              <p>
+                Com a reunião do Eng.º Francisco, Eng.º Amílcar, Eng.º Carlos,
+                Técnico Armindo e Técnico Carlos, e eu presente a observar
+                chegaram numa conclusão.
+              </p>
+              <p>
+                Com a conclusão tomada, engenheiro Amílcar poderia prosseguir
+                com certeza no bloco 3, lembrando sempre que Sina sempre teve
+                outras frentes, onde eles poderiam continuar a dar trabalho,
+                fazendo que não afetasse muito esse contratempo.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture46.png"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 45 – Estrutura Metálica Bloco 3 </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture47.png"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 46 – Como fazer a amarração daquela borda numa
+                        estrutura metálica?</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                solução encontrada foi esta: embebedar a estrutura metálica com
+                betão.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture48.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 47 – Cinta de travamento e preparação para a
+                        amarração
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture49.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 48 – Fachada bloco 3 concluída </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Dito isto, ele começou-se a alvenaria do bloco 3, o reboco do
+                bloco 1 e 2.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture110.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 49 – Reboco do Bloco 2 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture50.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 50 – Reboco do Bloco 1 </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Após algum tempo, e de ter concluído a alvenaria e o reboco do
+                bloco 1 e 2, começaram a demolir o chão, para poderem por um
+                novo como previsto no projeto, e uma parede que faz fronteira
+                com a oficina da parte de limpeza dos equipamentos e máquinas da
+                Enapor.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture51.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 51 – Abertura no terreno para passagem de canos
+                        de canalização de esgotos
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture52.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 52 – Preparação do terreno para colocação de
+                        “betovena”
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Também começaram a instalar a telha metálica do bloco 3. Teve um
+                pequeno problema visto que a telha ficou muito pequeno para ser
+                posta a calha, logo deram ao dono de obra a opção de estender a
+                telha.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture53.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 53 – Demolição da parede que faz fronteira com a
+                        oficina
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture54.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 54 – Colocação da telha metálica </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Depois de prepararem o terreno, começaram a pôr o “betovena”
+                (expressão que eles (trabalhadores e engenheiros) usam em cabo
+                verde para Tout-Venant).
+              </p>
+
+              <p>
+                Após colocarem Tout-Venant no solo, e regarem até chegar no
+                ponto de ficarem úmido, começaram a compactar. Criaram pontos de
+                altura do massame (com betonilha acabada). Preparam os cabos e
+                aplicaram os cabos de acordo com o projeto.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture55.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 55 – Tout Venant compactado com os pontos de
+                        altura de massame
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture56.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 56 – Preparação dos cabos de eletricidade do
+                        edifício
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Começaram a pôr o novo chão (massame), com os cabos embutidos.
+                Fiscalizei se todos os cabos estavam devidamente embutidos de
+                acordo com o projeto. E também a parte hidráulica, porém a parte
+                hidráulica está extremamente atrasada no meu ponto de vista. Vi
+                que tem uma zona que não está bem de acordo com o projeto na
+                parte elétrica, porém de acordo com o engenheiro Amílcar isso é
+                responsabilidade da parte elétrica e o fiscal disse que só
+                podemos avaliar ou mandar corrigir quando já tiverem tudo
+                fixado.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture57.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 57 – Massame com Betonilha acabada numa laje
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture58.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 58 – Fixação dos cabos de eletricidade no
+                        Tout-Venant para colocação do massame
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture59.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 59 – Colocação do massame até o nível do ponto
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Aproveitei um momento que o Eng. Amílcar estava mais desocupado
+                para fazer a pergunta como é o processo depois da aquisição do
+                terreno.
+              </p>
+              <p>
+                Ele explicou-me que depois de adquirir/ comprar o terreno, o
+                projeto de arquitetura tem que ser assinado pelo arquiteto, e o
+                projeto de estrutura pelo engenheiro civil. Quando esses 2
+                projetos estiverem assinados por engenheiros que estejam na
+                ordem e também inscrito na camara, eles vão pedir um valor de
+                acordo com o tamanho do terreno e do projeto, para eles
+                começarem a aprovar o terreno, enquanto não for pago o valor,
+                vai ficar em espera.
+              </p>
+              <p>
+                Quando for pago, a meados de 2 semanas, eles dão o feedback do
+                terreno se foi aprovado ou não, e se caso não for aprovado
+                pediram para ser corrigido o que for necessário. O engenheiro
+                responsável do projeto ou o arquiteto, dependendo do que é
+                necessário corrigir, vai corrigir o que pedido, e enviar de
+                novo, sem nenhum custo acrescentado.
+              </p>
+              <p>
+                Feito isso, e aprovado o projeto, agora é preciso uma licença de
+                construção da camara para que seja feito a construção no
+                terreno, de acordo com o projeto aprovado, essa licença também
+                tem um custo. Quando for pago, já se terá a licença para começar
+                a construir, porém para começar a construir é necessário que
+                tenha alguém responsável pela construção do edifício. Logo será
+                necessário contratar algum engenheiro civil para começar a
+                construir o edifício.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture60.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 60 – Massame com betonilha acabada
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Após a colocação do massame com betonilha acabada ficou da
+                seguinte forma:
+              </p>
+
+              <p>
+                Em seguida colocou-se as telhas do piso 1 do bloco 2 e
+                começou-se a passar de imediato a massa branca nas paredes.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture61.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 61 – Telha posta e massa branca nas paredes
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                No piso 0 do bloco 2 começou-se a preparar o Tout-Venant, regar,
+                compactar o solo para passar o massame então posteriormente
+                colocar os pavês.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture62.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 62 – Preparação do Tout-Venant </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture63.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 63 – Compactação do Tout-Venant </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Enquanto isso no bloco 3 está-se a pôr já o massame até o nível
+                do ponto no balneário e nas casas de banhos masculino está-se à
+                espera de serem postos os tubos hidráulicos.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture64.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 64 – Massame Bloco 3 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture65.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 65 – Casa de banho Bloco 3 à espera dos tubos
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Colocou-se a massa branca em todas as paredes do bloco 1.</p>
+              ´
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture66.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 66 – Massa branca nas paredes bloco 3
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture67.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 67 – Mais Massa branca nas paredes do bloco 3
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>No bloco 2, instalou-se os tubos de queda das calhas.</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture68.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 68 – tubo de queda das calhas </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Depois que estava posto e fixo as tomadas do bloco 1, e que
+                realmente o que tinha dito estava certo e a tomada estava
+                instalada no local errado, começaram a corrigir o erro. Contudo
+                olha como ficou o resultado final:
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture69.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 69 – tubo de queda das calhas </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Se eles tivessem corrigido logo de início quando eu havera dito
+                teria um aspecto muito melhor e não teria essa correção. E pelo
+                tubo elétrico ter essa curva que não se saberá ao certo onde
+                estará a continuação do tubo elétrico caso tenha algum problema,
+                visto que vai estar coberto pelo reboco.
+              </p>
+
+              <p>
+                Começaram a instalar os tubos hidráulico embutidos na alvenaria.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture70.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 70 – Tubo de águas potáveis embutida e tubo de
+                        águas residuais, bloco 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture71.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 71 – Tubo de águas potáveis, bloco 2
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                E também a instalação dos vãos que serão reutilizados do projeto
+                antigo.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture72.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 72 – Vãos do bloco 2 piso 1 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture73.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 73 – Vão do bloco 1 piso 0 </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Na parte exterior começaram a construir a parede que faz
+                fronteira com a parte de manutenção da Enapor e alguns pilares.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture74.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 74 – Parede que faz fronteira com a manutenção e
+                        os pilares novos
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Chegaram os revestimentos de porcelana ( mosaicos ) e começou-se
+                de imediato a pôr-se no chão.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture75.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 75 – Monte de mosaicos </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture76.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 76 – Colocação dos mosaicos </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Logo no início da obra, teve-se um erro na qual, a viga e
+                pilares do bloco 2 piso 0 são todos à vista, e o empreiteiro não
+                teve o cuidado de fazer um bom acabamento portanto foi decidido
+                em reunião que o terão que deixar a viga das bordas e os pilares
+                das bordas do edifício todos com bom acabamento, dito isto, o
+                empreiteiro terá que picar todas as estruturas que precisam ter
+                um bom acabamento, para então deixar um belo reboco.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture77.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 77 – Picando a viga do bloco 2 piso 0
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture78.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 78 – Picando o pilar do bloco 2 piso 0
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture79.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 79 – Reboco do pilar do bloco 2 piso 0
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Começaram a fazer a escavação para as águas residuais e caixas
+                de visita até a rede de esgoto pública.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture80.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 80 – Caixa de visita e escavação para tubo de
+                        águas residuais
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture81.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 81 – Caixa de visita recebendo o tubo de águas
+                        residuais do bloco 3
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture82.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 82 – Abrindo caixa publica da rede de esgostos
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                E ao mesmo tempo também colocaram os mosaicos de revestimento de
+                parede.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture83.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 83 – Misturador de cola de cimento para mosaicos
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture84.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 84 – Mosaicos, casa de banho bloco 2, piso 1
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Começaram as obras do bloco 4</p>
+
+              <p>
+                E começaram pelas vigas de fundação e sapatas, tendo que demolir
+                betão com martelo pneumático. Houve queixa por parte do
+                empreiteiro a dizer que de acordo com o projeto, era suposto ser
+                um solo, e não 15-20 cm de betão para chega na cota desejada.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture85.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 85 – Martelo pneumático a abrir vala
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture86.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 86 – Sapata e Viga de fundação com betão de
+                        limpeza
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Começaram a pôr as tubagens de águas residuais no bloco 3</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture87.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 87 – Tubagens de águas residuais até caixas de
+                        visitas no bloco 3
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture88.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 88 – Tubagens de águas potáveis embutidas
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Começaram também a colocar as luzes led no bloco 1</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture89.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 89 – Luzes led no teto 1, bloco 1 </strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture90.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 90 –Luzes led no teto 2, bloco 1 </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Finalmente finalizaram a casa de banho do bloco 1 e começaram a
+                pôr o revestimento de pavimento ( mosaicos )
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture91.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 91 – casa de banho bloco 3</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Finalmente após vários dias com uma vala aberta no balneário do
+                bloco 2, os tubos de PP-R de 63 chegaram de praia e pode-se
+                instalar no seu devido local, concluindo maioritariamente o
+                trabalho de tubagens de águas potáveis.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture92.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 92 – Tubo PP-R de diâmetro de 63mm, bloco 2 piso
+                        1</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Continuando no balneário de estiva, bloco 2 piso 1, colocaram-se
+                os mosaicos diferentes, mais rugosos, para evitar deslizamento e
+                lesões futuras.
+              </p>
+
+              <p>
+                Pensou-se que o mosaico era um pouco fino (7 mm) porém ao
+                concluir que não terá grandes materiais caindo em cima desse
+                mosaico, não tem grandes problemas em utilizá-lo.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture93.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 93 – Mosaicos chuveiros, bloco 2 piso 1</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Continuação do bloco 4, após a betonagem de limpeza, colocou-se
+                esse plástico como mostra a figura a seguir e armou-se a sapata,
+                juntamente com o pilar. Também é de referir que foi necessária
+                uma grua ou algo semelhar para levantar o pilar.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture94.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 94 - Grua a levantar o pilar</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture95.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 95 –Pilar e sapata bloco 1-4</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Após posto a sapata no local e viga de fundação, começou-se a
+                betonar.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture96.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 96 – Betonagem sapata e viga bloco 1-4</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                No bloco 1 piso 1, começou-se a por as asnas para então colocar
+                as telhas.
+              </p>
+
+              <p>
+                Não concordo muito com as telhas, visto que é fibro cimento o
+                que é ilegal e muito prejudicial para a saúde.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture97.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 97 – Asnas bloco 1, piso 1</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Enquanto isso no bloco 4, começaram a tirar os vão existentes, e
+                desmontar os equipamentos que serão reutilizados.
+              </p>
+
+              <p>
+                Após isso, foi retirado o teto falso, e abriram logo de seguida
+                as 2 sapatas de fundação novas.
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture98.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 98 – Teto falso retirado</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture99.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 99 – Sapata aberta e com a gaiola posta do bloco
+                        4</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Betonaram os pilares do bloco 1-4</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture100.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 100 – Pilar do bloco 1-4</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Armaram e betonaram a sapata e pilar do bloco 4 como fizeram no
+                bloco 1-4
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture101.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 101 – Sapata de fundação e pilar do bloco
+                        4</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Enquanto isso começaram por colocar a telha de fibro-cimento no
+                bloco 1
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture102.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 102 – Telha do bloco 1 posta</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture103.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 103 – Detalhes de amarração da asnas e telhas do bloco 1</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Tiraram as telhas do bloco 4</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture104.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 104 – Remoção no bloco 4, as telhas
+                        metálicas</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Começaram a colocar a cofragem na viga do bloco 1-4 para então
+                betonar. Logo em seguida começaram a subir a alvernaria do bloco
+                1-4
+              </p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture105.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 105 – Cofragem e betonagem da viga do bloco
+                        1-4</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture106.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong>Figura 106 – Alvenaria bloco 1-4</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>Começaram por colocar os vãos da porta o bloco 1</p>
+
+              <div class="d-flex justify-content-around align-items-center row">
+                <div class="col text-center">
+                  <img
+                    src="./img/MOP/Picture107.jpg"
+                    class="img-fluid text-center"
+                  />
+                  <div class="text-center">
+                    <p>
+                      <strong
+                        >Figura 107 – Revestimento dos vãos da porta</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                O meu estágio acabou aqui, em 17 de Dezembro de 2021, onde se
+                estava a remover o telhado do bloco 4, a subir a alvenaria do
+                bloco 1-4. Enquanto à rede de esgoto da zona exterior após
+                escavarem quase 2 metros, acharam que já tinham uma boa
+                inclinação visto que o projeto queria 2% e não era possível,
+                logo tentaram 1,5%. Não chegaram na parte dos ensaios da rede de
+                esgoto.
+              </p>
+
+              <p>
+                A obra era supostamente ter terminado no final de julho sendo
+                sempre adiada. Como por exemplo, de final de julho para final de
+                Setembro, de final de Setembro para final de Outubro e assim
+                adiante. Acredito que essa empresa não tem capacidades técnicas
+                de executar a obra dentro do prazo devido e nem coordenação para
+                tal. Contudo tive uma grande experiencia de aprendizagem onde
+                pode aprender bastante com o Engenheiro Amílcar, o carregado
+                pela obra (não o direto de obra), excelente engenheiro apesar da
+                empresa não lhe dar oportunidade de poder avançar na obra devido
+                a materiais e equipamentos.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light mt-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <h2 class="footer-logo text-black">Social Media</h2>
+          <p class="mx-auto mt-4 fw-bolder">Encontre-me nas Redes Sociais!</p>
+          <ul class="list-unstuled mt-4 social-icon">
+            <li class="list-inline-item me-1">
+              <a
+                href="https://github.com/GuuhBoss"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://web.facebook.com/gustavinho.silva.10"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://www.instagram.com/guuhsiilvaaaaa/"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="list-inline-item me-1">
+              <a
+                href="https://www.linkedin.com/in/gustavosjob/"
+                class="btn btn-outline-primary rounded-circle"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <!-- <li class="list-inline-item me-1"><a href="https://wa.me/351937115131?text=Olá! Sou Gustavo Silva, prazer!" class="btn btn-outline-primary rounded-circle"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="text-center bg-blue text-gold pb-4">
+        <p class="pt-3 mb-2">&copy; 2021 Gustavo Silva</p>
+        <a href="">Legal Disclaimer</a>
+      </div>
+    </footer>
+  </body>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function scroll() {
+      console.log(window.scrollY);
+      if (window.scrollY > 25 && window.scrollY < 400) {
+        const nav = document.querySelector("nav");
+        nav.className =
+          "navbar navbar-expand-md navbar-blue bg-blue bg-opacity-75 p-4 shadow";
+      } else {
+        const nav = document.querySelector("nav");
+        nav.className =
+          "navbar navbar-expand-md navbar-blue bg-blue bg-transparent p-4";
+      }
+    }
+
+    // window.addEventListener("resize", resizeWindow);
+
+    // function resizeWindow() {
+    //   var dataSpyList = [].slice.call(
+    //     document.querySelectorAll('[data-bs-spy="scroll"]')
+    //   );
+
+    //   dataSpyList.forEach(function (dataSpyEl) {
+    //     bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
+    //   });
+    // }
+  </script>
+</html>
